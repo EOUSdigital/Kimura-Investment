@@ -1,0 +1,392 @@
+* {
+    --color-one: #FFFFFF;
+    --color-two: #000000;
+    --color-three: #ECF0F1;
+    --color-four: #f8f8f8;
+    --color-five: #191C21;
+    --color-six: #252932;
+    --color-seven: #191000;
+    --color-eight: #195962;
+    --color-nine: #F56F6C;
+    --color-ten: #FFA012;
+}
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: 'Bacasime Antique', serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: var(--color-one);
+
+}
+
+/* HEADER 
+==================================================*/
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color-two);
+    font-family: 'Caprasimo', cursive;
+    font-weight: 400;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navBar a {
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 22px;
+    color: var(--color-one);
+}
+
+.navBar a:hover {
+    color: var(--color-four);
+}
+
+
+/* MAIN 
+==================================================*/
+
+#mainContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 60px auto 0 auto;
+}
+
+/* BUTTON
+==================================================*/
+
+button {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+
+/* HERO SECTION 
+==================================================*/
+
+#heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    width: 95%;
+    flex: 1 700px;
+    background-image: url(image/heroSection-Insights-Market-Structure.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-one);
+}
+
+#heroSection p {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* FIRST SECTION 
+==================================================*/
+
+#firstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+#firstSection img {
+    width: 200px;
+    height: 200px;
+}
+
+.firstSectionHero {
+    display: flex;
+}
+
+.firstSectionContainer {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row wrap;
+}
+
+/* SECOND SECTION 
+==================================================*/
+
+#secondSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-four);
+    padding: 50px 0;
+}
+
+.secondSectionHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondSectionContainer {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.secondSectionItem-1,
+.secondSectionItem-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* THIRD SECTION 
+==================================================*/
+
+#thirdSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 0;
+}
+
+.thirdSectionItem-1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+/* FORTH SECTION 
+==================================================*/
+
+#forthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-four);
+    padding: 50px 0;
+}
+
+.forthSectionHero {
+    padding: 50px 10px;
+}
+
+.forthSectionContainer {
+    display: flex;
+}
+
+.forthSectionItem-1 img {
+    width: 450px;
+    height: 300px;
+}
+
+.forthSectionItem-2 img,
+.forthSectionItem-3 img {
+    width: 450px;
+    height: auto;
+}
+
+.forthSectionItem-1,
+.forthSectionItem-2,
+.forthSectionItem-3 {
+    text-align: center;
+}
+
+/* FIFTH SECTION 
+==================================================*/
+
+#fifthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fifthSectionHero {
+    padding: 50px 10px;
+}
+
+.fifthSectionContainer {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fifthSectionContainer img {
+    align-items: center;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.fifthSectionItem-1,
+.fifthSectionItem-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 0 50px;
+}
+
+/* FOOTER 
+==================================================*/
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.footerContent-1,
+.footerContent-2,
+.footerContent-3 {
+    justify-content: space-around;
+    align-items: left;
+    flex-flow: row wrap;
+    line-height: 1.6;
+    list-style-type: none;
+    padding: 10px 100px 50px 100px;
+}
+
+#footerContent a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#copyright {
+    padding-top: 10px;
+    border-top: 3px solid #ffffff;
+}
+
+#copyright a {
+    text-decoration: none;
+}
+
+/* Return to top button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 170px; /* Place the button at the bottom of the page */
+    right: 35px; /* Place the button 35px from the right */
+    z-index: 900; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: darkgray; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 10px; /* Some padding */
+    border-radius: 20%; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; /* Add a permanent shadow */
+  }
+  
+  #myBtn:hover {
+    background-color: lightgray; /* Add background on hover */
+  }
